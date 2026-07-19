@@ -78,3 +78,49 @@ class Azienda implements IAzienda {
     );
   }
 }
+
+const amina = new Partecipante(
+  "Amina",
+  "Diallo",
+  "Senegal",
+  "Diploma superiore",
+  ["francese", "italiano B1"],
+  "Sviluppo web"
+);
+
+const youssef = new Partecipante(
+  "Youssef",
+  "El Amrani",
+  "Marocco",
+  "Laurea",
+  ["arabo", "francese", "italiano B2"],
+  "Ristorazione"
+);
+
+const corsoWeb = new Corso(
+  "Sviluppo Web Front-End",
+  "Corso base su HTML, CSS e JavaScript",
+  "Informatica",
+  120
+);
+
+const corsoCucina = new Corso(
+  "Cucina e Sala",
+  "Tecniche di base di cucina e servizio in sala",
+  "Ristorazione",
+  80
+);
+
+const techBridge = new Azienda(
+  "TechBridge Srl",
+  "Sviluppo software",
+  "Azienda di sviluppo web e app",
+  ["Junior Frontend Developer", "Stagista IT"]
+);
+
+const trattoriaIlPonte = new Azienda(
+  "Trattoria Il Ponte",
+  "Ristorazione",
+  "Ristorante tipico italiano",
+  ["Aiuto cuoco"]
+);
