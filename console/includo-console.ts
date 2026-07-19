@@ -124,3 +124,16 @@ const trattoriaIlPonte = new Azienda(
   "Ristorante tipico italiano",
   ["Aiuto cuoco"]
 );
+
+// Test iscrizione ai corsi
+amina.iscrivitiCorso(corsoWeb);
+youssef.iscrivitiCorso(corsoCucina);
+amina.iscrivitiCorso(corsoWeb); // iscrizione duplicata, non aggiunta di nuovo
+
+// Test offerta di lavoro
+techBridge.offriPosizione(amina, "Junior Frontend Developer");
+trattoriaIlPonte.offriPosizione(youssef, "Aiuto cuoco");
+techBridge.offriPosizione(youssef, "Responsabile Marketing"); // posizione non disponibile
+
+console.log(`Iscritti al corso "${corsoWeb.titolo}":`, corsoWeb.iscritti.map(p => `${p.nome} ${p.cognome}`));
+console.log(`Iscritti al corso "${corsoCucina.titolo}":`, corsoCucina.iscritti.map(p => `${p.nome} ${p.cognome}`));
