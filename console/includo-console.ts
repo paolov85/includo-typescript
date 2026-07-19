@@ -16,3 +16,11 @@ interface ICorso {
   iscritti: IPartecipante[];
   aggiungiPartecipante(partecipante: IPartecipante): void;
 }
+
+interface IAzienda {
+  nome: string;
+  settoreAttivita: string;
+  descrizione: string;
+  posizioniAperte: string[];
+  offriPosizione(partecipante: IPartecipante, posizione: string): void;
+}
