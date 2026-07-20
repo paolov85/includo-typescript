@@ -4,4 +4,4 @@ Progetto del corso TypeScript (start2impact): un sistema che modella la struttur
 
 ## Stato attuale
 
-Lavoro in corso — definite le interfacce (`IPartecipante`, `ICorso`, `IAzienda`), le classi che le implementano (`Partecipante`, `Corso`, `Azienda`), e istanziati dati di esempio con test della logica (iscrizione ai corsi, offerta di posizioni lavorative) in `console/includo-console.ts`. Prossimo passo: interfaccia interattiva.
+Lavoro in corso — versione console completa in `console/includo-console.ts` (interfacce, classi, dati di esempio e test della logica). In `interattivo/` è in costruzione una versione con interfaccia HTML: per ora la struttura statica (`index.html`, `styles.css`); la logica TypeScript che la rende interattiva è il prossimo passo.

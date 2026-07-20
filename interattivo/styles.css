@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #1e1e1e;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 24px;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 22px;
+  color: #ffffff;
+  margin: 0 0 4px;
+}
+
+.subtitle {
+  color: #9a9a9a;
+  font-size: 13px;
+  margin: 0 0 20px;
+}
+
+h2 {
+  font-size: 15px;
+  color: #ffffff;
+  margin: 0 0 12px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.grid-status {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.panel {
+  background: #262626;
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #1a1a1a;
+  color: #e0e0e0;
+  font-size: 13px;
+}
+
+button {
+  background: #3a7d5c;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+button:hover {
+  background: #468f6a;
+}
+
+.card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.card .tag {
+  display: inline-block;
+  background: #3a3a3a;
+  color: #cfcfcf;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-left: 6px;
+}
+
+.card .meta {
+  color: #a8a8a8;
+  margin: 4px 0 0;
+}
+
+.empty {
+  color: #777;
+  font-size: 13px;
+  font-style: italic;
+}
+
+#log {
+  max-height: 200px;
+  overflow-y: auto;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 12px;
+}
+
+.log-line {
+  padding: 4px 0;
+  border-bottom: 1px solid #333;
+}
+
+.log-line::before {
+  content: "› ";
+  color: #6a9955;
+}

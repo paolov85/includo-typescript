@@ -1,0 +1,73 @@
+<div class="app">
+  <header>
+    <h1>IncluDO</h1>
+    <p class="subtitle">Percorsi di formazione e inserimento lavorativo per migranti</p>
+  </header>
+
+  <div class="grid">
+    <section class="panel">
+      <h2>Aggiungi partecipante</h2>
+      <input id="p-nome" placeholder="Nome">
+      <input id="p-cognome" placeholder="Cognome">
+      <input id="p-paese" placeholder="Paese di origine">
+      <select id="p-istruzione">
+        <option value="Licenza media">Licenza media</option>
+        <option value="Diploma superiore">Diploma superiore</option>
+        <option value="Laurea">Laurea</option>
+        <option value="Nessun titolo">Nessun titolo</option>
+      </select>
+      <input id="p-lingue" placeholder="Competenze linguistiche (separate da virgola)">
+      <input id="p-ambito" placeholder="Ambito di formazione di interesse">
+      <button id="btn-add-partecipante">Aggiungi partecipante</button>
+    </section>
+
+    <section class="panel">
+      <h2>Aggiungi corso</h2>
+      <input id="c-titolo" placeholder="Titolo del corso">
+      <input id="c-descrizione" placeholder="Descrizione">
+      <input id="c-settore" placeholder="Settore professionale">
+      <input id="c-durata" type="number" placeholder="Durata (ore)">
+      <button id="btn-add-corso">Aggiungi corso</button>
+    </section>
+
+    <section class="panel">
+      <h2>Aggiungi azienda partner</h2>
+      <input id="a-nome" placeholder="Nome azienda">
+      <input id="a-settore" placeholder="Settore di attività">
+      <input id="a-descrizione" placeholder="Descrizione">
+      <input id="a-posizioni" placeholder="Posizioni aperte (separate da virgola)">
+      <button id="btn-add-azienda">Aggiungi azienda</button>
+    </section>
+
+    <section class="panel">
+      <h2>Iscrivi a un corso</h2>
+      <select id="sel-partecipante-iscrizione"></select>
+      <select id="sel-corso-iscrizione"></select>
+      <button id="btn-iscrivi">Iscrivi</button>
+    </section>
+
+    <section class="panel">
+      <h2>Offri una posizione</h2>
+      <select id="sel-azienda-offerta"></select>
+      <select id="sel-partecipante-offerta"></select>
+      <select id="sel-posizione-offerta"></select>
+      <button id="btn-offri">Offri posizione</button>
+    </section>
+  </div>
+
+  <div class="grid-status">
+    <section class="panel">
+      <h2>Corsi</h2>
+      <div id="corsi-list"></div>
+    </section>
+    <section class="panel">
+      <h2>Aziende partner</h2>
+      <div id="aziende-list"></div>
+    </section>
+  </div>
+
+  <section class="panel">
+    <h2>Log attività</h2>
+    <div id="log"></div>
+  </section>
+</div>
